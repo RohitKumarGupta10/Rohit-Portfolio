@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit's Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="heading">Portfolio Website</h1>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-links"><a class="nav-link" href="#about">Home</a></li>
+                <li class="nav-links"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-links"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-links"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-nav-btn">
+            <ion-icon class="icon-mobile-nav open" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav close" name="close-outline"></ion-icon>
+        </button>
+    </header>
+
+    <section class="about" id="about" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="grid grid--2-cols">
+                <img class="my-image" src="profile.png" alt="Profile Image">
+                <div class="about-info">
+                    <h2 class="secondary-heading">Hi, I'm <span class="name">Rohit Kumar Gupta</span></h2>
+                    <p class="about-text">
+                        Hello! I'm Rohit Kumar Gupta, currently pursuing a Bachelor's in Computer Science Engineering at Ajeenkya DY Patil University. With expertise in HTML, CSS, JavaScript, and cloud computing, I'm dedicated to creating innovative web solutions. Passionate about technology, I am a Keen Learner. Let's connect and bring ideas to life!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills" data-aos="fade-down" data-aos-duration="1000">
+        <div class="container">
+            <div class="heading-text">
+                <h3 class="tertiary-heading">My Skills</h3>
+            </div>
+            <div class="skills-images">
+                <div class="skills-row">
+                    <img src="HTML.png" alt="HTML">
+                    <img src="CSS.png" alt="CSS">
+                    <img src="JS.png" alt="JavaScript">
+                </div>
+                <div class="skills-row">
+                    <img src="github.png" alt="GitHub">
+                    <img src="mysql.png" alt="MySQL">
+                    <img src="python.png" alt="Python">
+                    <img src="googlecloud.png" alt="Google Cloud">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="heading-text">
+                <h3 class="tertiary-heading">My Projects</h3>
+            </div>
+            <div class="grid grid--3-cols">
+                <div class="card">
+                    <img class="project-image" src="landing page.png" alt="Landing Page">
+                    <h4 class="project-name">Landing Page</h4>
+                    <a class="project-link" href="https://rohitkumargupta10.github.io/OBIGRIPlandingpage.github.io/">View Project -></a>
+                </div>
+                <div class="card">
+                    <img class="project-image" src="chatbot.png" alt="chatbot">
+                    <h4 class="project-name">University Chatbot</h4>
+                    <a class="project-link" href="https://rohitkumargupta10.github.io/ADYPU-Chatbot/">View Project -></a>
+                </div>
+                <div class="card">
+                    <img class="project-image" src="tempcon.png" alt="Temperature Converter">
+                    <h4 class="project-name">Temperature Converter</h4>
+                    <a class="project-link" href="https://rohitkumargupta10.github.io/Temperature-Converter/">View Project -></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="heading-text">
+                <h3 class="tertiary-heading">Contact</h3>
+            </div>
+            <form class="form" onsubmit="showAlert(event)">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <input type="tel" placeholder="Your Contact Number">
+                <textarea cols="30" rows="7" placeholder="Your Message"></textarea>
+                <button class="btn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <div class="icons">
+                    <ion-icon class="icon" name="logo-linkedin"></ion-icon>
+                    <ion-icon class="icon" name="logo-whatsapp"></ion-icon>
+                    <ion-icon class="icon" name="logo-twitter"></ion-icon>
+                </div>
+                <p class="copyright">@2024 Rohit Kumar Gupta ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+
+        function showAlert(event) {
+            event.preventDefault();
+            alert('Your message has been sent!');
+        }
+    </script>
+</body>
+</html>
